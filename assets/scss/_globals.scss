@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-size;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    $font-family: $font-family;
+    background-image: linear-gradient($soft-violet, $soft-blue);
+    padding: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+p,
+a {
+    font-family: $font-family;
+}

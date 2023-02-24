@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* Text */
+/*Deviders*/
+/*BG*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  padding: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  background-color: hsl(240deg, 5%, 91%);
+  max-width: 820px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 250px;
+  text-align: center;
+  margin-top: -50%;
+  margin-bottom: 60px;
+}
+
+.hero-img img {
+  filter: drop-shadow(0 25px 0 hsla(240deg, 73%, 65%, 0.1));
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  color: hsl(238deg, 29%, 16%);
+}
+
+.faq {
+  border-bottom: 0.5px solid hsl(240deg, 6%, 50%);
+  position: relative;
+  padding: 1rem 0 1rem 0;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq img {
+  position: absolute;
+  right: 0;
+  top: 1.25rem;
+}
+
+.faq h2 {
+  font-size: 0.85rem;
+  color: hsl(240deg, 6%, 50%);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.faq h2:hover {
+  color: hsl(16deg, 72%, 63%);
+}
+
+.faq p {
+  color: hsl(240deg, 6%, 50%);
+  height: 0;
+  visibility: hidden;
+}
+
+.faq.expanded {
+  overflow: visible;
+}
+
+.faq.expanded h2 {
+  font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
+}
+
+.faq.expanded img {
+  transform: rotate(180deg);
+}
+
+.faq.expanded p {
+  height: 100%;
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    padding: 3rem 7rem 2rem 0;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+  }
+  .hero-img {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left -50px top 0px;
+    background-size: contain;
+  }
+  .hero-img img.box {
+    position: absolute;
+    left: -70px;
+    top: 110px;
+  }
+  .hero-text {
+    width: 75%;
+  }
+  .hero-img img {
+    filter: drop-shadow(0 90px 0 hsla(240deg, 73%, 65%, 0.1));
+    transform: translateX(-10%);
+  }
+  main h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+}
